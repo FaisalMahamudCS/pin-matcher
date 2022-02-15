@@ -36,11 +36,15 @@ if(event.target.innerText=='Submit'){
    // console.log('submit')
     if(genPin == pinDisplay){
         //alert("matched")
-        document.getElementById('pin-matched').classList='d-block '
+        document.getElementById('pin-matched').classList='d-block text-white'
     }
     else{
-   document.getElementById('unmatch').classList='d-block'
+   document.getElementById('unmatch').classList='d-block text-white'
     }
+}
+
+if(event.target.innerText=='C'){
+    document.getElementById('display').value='';
 }
 
 
